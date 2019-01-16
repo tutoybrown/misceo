@@ -22,17 +22,11 @@ public class PickupObject : MonoBehaviour
         {
             carry(carriedObject);
             checkDrop();
-            //rotateObject();
         }
         else
         {
             pickup();
         }
-    }
-
-    void rotateObject()
-    {
-        carriedObject.transform.Rotate(5, 10, 15);
     }
 
     void carry(GameObject o)
@@ -57,8 +51,14 @@ public class PickupObject : MonoBehaviour
                 {
                     carrying = true;
                     carriedObject = p.gameObject;
+                    //IGNORE RAYCAST TEMPORARILY
                     //p.gameObject.rigidbody.isKinematic = true;
                     p.gameObject.GetComponent<Rigidbody>().useGravity = false;
+                    if (Input.GetKeyDown("E"))
+                    {
+                        //Object to Object Interaction
+                    }
+
                 }
             }
         }
@@ -75,7 +75,6 @@ public class PickupObject : MonoBehaviour
     void dropObject()
     {
         carrying = false;
-        //carriedObject.gameObject.rigidbody.isKinematic = false;
         carriedObject.gameObject.GetComponent<Rigidbody>().useGravity = true;
         carriedObject = null;
     }
