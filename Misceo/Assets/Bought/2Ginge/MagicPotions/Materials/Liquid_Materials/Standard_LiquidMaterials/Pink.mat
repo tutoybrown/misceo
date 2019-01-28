@@ -94,9 +94,9 @@ Material:
     - _ZWrite: 1
     - _metallic: 0
     m_Colors:
-    - _Color: {r: 0.9725491, g: 0.37647063, b: 0.9294118, a: 1}
-    - _EmissionColor: {r: 0.9705882, g: 0.37824395, b: 0.9297369, a: 1}
-    - _SColor: {r: 0.9725491, g: 0.37647063, b: 0.9294118, a: 1}
-    - _SEmissionColor: {r: 1, g: 0.47794116, b: 0.83438116, a: 1}
+    - _Color: {r: 0.37647063, g: 0.9428129, b: 0.972549, a: 1}
+    - _EmissionColor: {r: 0.37647063, g: 0.972549, b: 0.9725489, a: 1}
+    - _SColor: {r: 0.37647063, g: 0.972549, b: 0.8302582, a: 1}
+    - _SEmissionColor: {r: 0.47843134, g: 0.99449706, b: 1, a: 1}
     - _SurfaceTexAnim: {r: 1, g: 1, b: 0, a: 0}
     - _SurfaceTint: {r: 1, g: 1, b: 1, a: 0.5}
