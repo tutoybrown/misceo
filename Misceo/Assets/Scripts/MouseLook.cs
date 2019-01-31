@@ -11,13 +11,12 @@ public class MouseLook : MonoBehaviour
 
     void Start()
     {
-        Cursor.visible = false;
         Vector3 rot = transform.localRotation.eulerAngles;
         rotY = rot.y;
         rotX = rot.x;
     }
 
-    void FixedUpdate()
+    void Update()
     {
         float mouseX = Input.GetAxis("Mouse X");
         float mouseY = -Input.GetAxis("Mouse Y");

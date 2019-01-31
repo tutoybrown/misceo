@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
     public float height = 10.0f;
     void Start()
     {
-        
+        Cursor.visible = false;
     }
     void FixedUpdate()
     {

@@ -11,7 +11,7 @@ public class Interact : MonoBehaviour {
     }
 	
 	// Update is called once per frame
-	void FixedUpdate () {
+	void Update () {
         if (Input.GetMouseButtonDown(1))
         {
             int x = Screen.width / 2;
