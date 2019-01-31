@@ -9,6 +9,8 @@ public class PickupObject : MonoBehaviour
     GameObject carriedObject;
     public float distance;
     public float smooth;
+    public Vector3 offset;
+
     // Use this for initialization
     void Start()
     {
@@ -31,7 +33,7 @@ public class PickupObject : MonoBehaviour
 
     void carry(GameObject o)
     {
-        o.transform.position = Vector3.Lerp(o.transform.position, mainCamera.transform.position + mainCamera.transform.forward * distance, Time.deltaTime * smooth);
+        o.transform.position = Vector3.Lerp(o.transform.position, mainCamera.transform.position + mainCamera.transform.forward + offset * distance, Time.deltaTime * smooth);
         o.transform.rotation = Quaternion.identity;
     }
 
@@ -52,11 +54,24 @@ public class PickupObject : MonoBehaviour
                     carrying = true;
                     carriedObject = p.gameObject;
                     //IGNORE RAYCAST TEMPORARILY
+                    carriedObject.layer = LayerMask.NameToLayer("Ignore Raycast");
                     //p.gameObject.rigidbody.isKinematic = true;
                     p.gameObject.GetComponent<Rigidbody>().useGravity = false;
-                    if (Input.GetKeyDown("E"))
+                    if (Input.GetKeyDown(KeyCode.E))
                     {
                         //Object to Object Interaction
+                        Ray rayInteract = mainCamera.GetComponent<Camera>().ScreenPointToRay(new Vector3(x, y));
+                        RaycastHit hit2;
+                        if(Physics.Raycast(rayInteract, out hit2))
+                        {
+                            Interactable a = hit2.collider.GetComponent<Interactable>();
+                            if (a != null)
+                            {
+
+                                Debug.Log("Hitt");
+                            }
+
+                        }
                     }
 
                 }
@@ -75,6 +90,7 @@ public class PickupObject : MonoBehaviour
     void dropObject()
     {
         carrying = false;
+        carriedObject.layer = LayerMask.NameToLayer("Default");
         carriedObject.gameObject.GetComponent<Rigidbody>().useGravity = true;
         carriedObject = null;
     }
