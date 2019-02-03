@@ -9,6 +9,12 @@ public class PickupObject : MonoBehaviour
     GameObject carriedObject;
     public float distance;
     public float smooth;
+    GameObject interactedObject;
+    string debug;
+
+    int x = Screen.width / 2;
+    int y = Screen.height / 2;
+
     // Use this for initialization
     void Start()
     {
@@ -21,6 +27,7 @@ public class PickupObject : MonoBehaviour
         if (carrying)
         {
             carry(carriedObject);
+            checkInteractable();
             checkDrop();
         }
         else
@@ -39,9 +46,6 @@ public class PickupObject : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(1))
         {
-            int x = Screen.width / 2;
-            int y = Screen.height / 2;
-
             Ray ray = mainCamera.GetComponent<Camera>().ScreenPointToRay(new Vector3(x, y));
             RaycastHit hit;
             if (Physics.Raycast(ray, out hit))
@@ -51,14 +55,10 @@ public class PickupObject : MonoBehaviour
                 {
                     carrying = true;
                     carriedObject = p.gameObject;
-                    //IGNORE RAYCAST TEMPORARILY
                     //p.gameObject.rigidbody.isKinematic = true;
                     p.gameObject.GetComponent<Rigidbody>().useGravity = false;
-                    if (Input.GetKeyDown("E"))
-                    {
-                        //Object to Object Interaction
-                    }
-
+                    //IGNORE RAYCAST TEMPORARILY
+                    carriedObject.layer = LayerMask.NameToLayer("Ignore Raycast");
                 }
             }
         }
@@ -76,6 +76,32 @@ public class PickupObject : MonoBehaviour
     {
         carrying = false;
         carriedObject.gameObject.GetComponent<Rigidbody>().useGravity = true;
+        carriedObject.layer = LayerMask.NameToLayer("Default");
         carriedObject = null;
+    }
+
+    void checkInteractable()
+    {
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            interact();
+        }
+    }
+
+    void interact()
+    {
+        Ray rayinteract = mainCamera.GetComponent<Camera>().ScreenPointToRay(new Vector3(x, y));
+        RaycastHit hit2;
+        if (Physics.Raycast(rayinteract, out hit2))
+        {
+            Interactable i = hit2.collider.GetComponent<Interactable>();
+            if (i != null)
+            {
+                interactedObject = i.gameObject;
+                debug=hit2.collider.name;
+                Debug.Log(debug);
+                
+            }
+        }
     }
 }
