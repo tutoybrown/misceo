@@ -5,11 +5,13 @@ using UnityEngine;
 public class PickupObject : MonoBehaviour
 {
     GameObject mainCamera;
-    bool carrying;
     GameObject carriedObject;
+    GameObject interactedObject;
+
+    bool carrying;
     public float distance;
     public float smooth;
-    GameObject interactedObject;
+    
     string debug;
 
     int x = Screen.width / 2;
