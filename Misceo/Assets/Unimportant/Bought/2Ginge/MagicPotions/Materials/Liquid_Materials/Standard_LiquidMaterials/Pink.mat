@@ -5,7 +5,8 @@ Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: Pink
   m_Shader: {fileID: 4800000, guid: d7d2baa32548aac4da5dadeb07c51813, type: 3}
   m_ShaderKeywords: _EMISSION
@@ -94,9 +95,9 @@ Material:
     - _ZWrite: 1
     - _metallic: 0
     m_Colors:
-    - _Color: {r: 0.37647063, g: 0.9428129, b: 0.972549, a: 1}
-    - _EmissionColor: {r: 0.37647063, g: 0.972549, b: 0.9725489, a: 1}
-    - _SColor: {r: 0.37647063, g: 0.972549, b: 0.8302582, a: 1}
-    - _SEmissionColor: {r: 0.47843134, g: 0.99449706, b: 1, a: 1}
+    - _Color: {r: 0, g: 0, b: 0, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _SColor: {r: 0, g: 0, b: 0, a: 1}
+    - _SEmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SurfaceTexAnim: {r: 1, g: 1, b: 0, a: 0}
     - _SurfaceTint: {r: 1, g: 1, b: 1, a: 0.5}
