@@ -8,6 +8,8 @@ public class PickupObject : MonoBehaviour
     GameObject carriedObject;
     GameObject interactedObject;
 
+    private Interact InteractClass;
+
     bool carrying;
     public float distance;
     public float smooth;
@@ -21,6 +23,7 @@ public class PickupObject : MonoBehaviour
     void Start()
     {
         mainCamera = GameObject.FindWithTag("MainCamera");
+        InteractClass = new Interact();
     }
 
     // Update is called once per frame
@@ -29,8 +32,8 @@ public class PickupObject : MonoBehaviour
         if (carrying)
         {
             carry(carriedObject);
-            checkInteractable();
             checkDrop();
+            checkInteractable();
         }
         else
         {
@@ -100,9 +103,9 @@ public class PickupObject : MonoBehaviour
             if (i != null)
             {
                 interactedObject = i.gameObject;
-                debug=hit2.collider.name;
-                Debug.Log(debug);
-                
+                debug=hit2.collider.;
+                //Debug.Log(debug);
+                InteractClass.
             }
         }
     }
