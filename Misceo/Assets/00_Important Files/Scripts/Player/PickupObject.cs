@@ -103,9 +103,9 @@ public class PickupObject : MonoBehaviour
             if (i != null)
             {
                 interactedObject = i.gameObject;
-                debug=hit2.collider.;
+                //debug=hit2.collider.;
                 //Debug.Log(debug);
-                InteractClass.
+                //InteractClass.; 
             }
         }
     }

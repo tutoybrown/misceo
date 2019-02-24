@@ -4,15 +4,25 @@ using UnityEngine;
 
 public class SwitchCamera : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public Camera Main, UI;
+    public GameObject next, crosshair;
+
     void Start()
     {
-        
+        Main.enabled = true;
+        UI.enabled = false;
     }
 
-    // Update is called once per frame
-    void Update()
+    void OnTriggerStay(Collider other)
     {
-        
+        if (Input.GetKeyDown("e") && other.tag == "MainCamera")
+        {
+            next.SetActive(true);
+            crosshair.SetActive(false);
+            Main.enabled = !UI.enabled;
+            UI.enabled = !Main.enabled;
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+        }
     }
 }
