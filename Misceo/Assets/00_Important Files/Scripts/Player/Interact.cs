@@ -4,16 +4,18 @@ using UnityEngine;
 
 public class Interact
 {
-    void interactGlassware()
+    public void interactGlassware(GameObject carriedObject, GameObject interactedObject)
     {
         Debug.Log("You interacted with a Glassware");
+
     }
-    void interactLabEquipment()
+    public void interactLabEquipment()
     {
         Debug.Log("You interacted with a Lab Equipment");
     }
-    void interactComputer()
+    public void interactComputer()
     {
         Debug.Log("You interacted with a Computer");
     }
 }
+ 

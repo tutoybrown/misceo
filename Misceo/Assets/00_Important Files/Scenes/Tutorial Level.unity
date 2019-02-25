@@ -639,6 +639,25 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1 &122307064 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3023266943864629369, guid: fdafa8bdca1f33546a93245755a8634e,
+    type: 3}
+  m_PrefabInstance: {fileID: 3126606975722567096}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &122307071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 122307064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6087b1290782e9f4a957e941f2fc3d7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 2461039410151899612, guid: 06c1c3b10551d4e47b645c8b444e8fc0, type: 3}
 --- !u!1 &123993033
 GameObject:
   m_ObjectHideFlags: 0
@@ -4098,7 +4117,7 @@ GameObject:
   - component: {fileID: 562996834}
   m_Layer: 0
   m_Name: erlenmayer shit (1)
-  m_TagString: Untagged
+  m_TagString: glassware
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5542,7 +5561,7 @@ GameObject:
   - component: {fileID: 675254274}
   m_Layer: 0
   m_Name: erlenmayer shit (3)
-  m_TagString: Untagged
+  m_TagString: glassware
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5648,7 +5667,7 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 0
+  m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -6058,6 +6077,24 @@ Transform:
   m_Father: {fileID: 2023014252}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0.124000005, y: 0.001, z: 0.99200004}
+--- !u!1 &701422154 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1434208906531850, guid: dfc527d3613b86b409757acb085b6ef6,
+    type: 3}
+  m_PrefabInstance: {fileID: 1855387755}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &701422157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 701422154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c9cf78a083b39a4f86da384d084c229, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &717411036
 GameObject:
   m_ObjectHideFlags: 0
@@ -14897,6 +14934,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: erlenmayer shit (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1859706929277543, guid: 0235d859c1627604aa6b84b97650e831, type: 3}
+      propertyPath: m_TagString
+      value: glassware
+      objectReference: {fileID: 0}
     - target: {fileID: 4493635240192839, guid: 0235d859c1627604aa6b84b97650e831, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.6237793
@@ -14945,6 +14986,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsKinematic
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 54229475146730283, guid: 0235d859c1627604aa6b84b97650e831,
+        type: 3}
+      propertyPath: m_UseGravity
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4577305233160081, guid: 0235d859c1627604aa6b84b97650e831, type: 3}
       propertyPath: m_LocalPosition.z
@@ -16055,6 +16101,10 @@ PrefabInstance:
     - target: {fileID: 1069677342300666, guid: 2a47404834fc1524d96243626e4e1dea, type: 3}
       propertyPath: m_Name
       value: weight
+      objectReference: {fileID: 0}
+    - target: {fileID: 1069677342300666, guid: 2a47404834fc1524d96243626e4e1dea, type: 3}
+      propertyPath: m_TagString
+      value: labequipment
       objectReference: {fileID: 0}
     - target: {fileID: 4896117273518220, guid: 2a47404834fc1524d96243626e4e1dea, type: 3}
       propertyPath: m_LocalPosition.x
@@ -20663,6 +20713,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: f0a97784bd8c4434ab02e583d0994fda, type: 3}
       propertyPath: m_Name
       value: Magnetic Stirrer
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: f0a97784bd8c4434ab02e583d0994fda, type: 3}
+      propertyPath: m_TagString
+      value: labequipment
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f0a97784bd8c4434ab02e583d0994fda, type: 3}
       propertyPath: m_LocalPosition.x
@@ -35136,6 +35190,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: erlenmayer shit (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8200589836583215697, guid: 195095d1150548d48b5d4bc9b8a7ada3,
+        type: 3}
+      propertyPath: m_TagString
+      value: glassware
+      objectReference: {fileID: 0}
     - target: {fileID: 8097331181797054905, guid: 195095d1150548d48b5d4bc9b8a7ada3,
         type: 3}
       propertyPath: allowShattering
@@ -35223,6 +35282,10 @@ PrefabInstance:
     - target: {fileID: 1434208906531850, guid: dfc527d3613b86b409757acb085b6ef6, type: 3}
       propertyPath: m_Name
       value: blender
+      objectReference: {fileID: 0}
+    - target: {fileID: 1434208906531850, guid: dfc527d3613b86b409757acb085b6ef6, type: 3}
+      propertyPath: m_TagString
+      value: labequipment
       objectReference: {fileID: 0}
     - target: {fileID: 4809359375988868, guid: dfc527d3613b86b409757acb085b6ef6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -36725,6 +36788,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2036028060 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1069677342300666, guid: 2a47404834fc1524d96243626e4e1dea,
+    type: 3}
+  m_PrefabInstance: {fileID: 1310390593}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2036028063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2036028060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c9cf78a083b39a4f86da384d084c229, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2036082050
 GameObject:
   m_ObjectHideFlags: 0
@@ -36799,6 +36880,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2036082050}
   m_CullTransparentMesh: 0
+--- !u!1 &2053180500 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: f0a97784bd8c4434ab02e583d0994fda,
+    type: 3}
+  m_PrefabInstance: {fileID: 1318390184}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2053180504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2053180500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c9cf78a083b39a4f86da384d084c229, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2060612541
 GameObject:
   m_ObjectHideFlags: 0
@@ -59562,6 +59661,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: erlenmayer shit
       objectReference: {fileID: 0}
+    - target: {fileID: 1859706929277543, guid: 0235d859c1627604aa6b84b97650e831, type: 3}
+      propertyPath: m_TagString
+      value: glassware
+      objectReference: {fileID: 0}
     - target: {fileID: 4493635240192839, guid: 0235d859c1627604aa6b84b97650e831, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.62875366
@@ -59614,6 +59717,11 @@ PrefabInstance:
     - target: {fileID: 54229475146730283, guid: 0235d859c1627604aa6b84b97650e831,
         type: 3}
       propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 54229475146730283, guid: 0235d859c1627604aa6b84b97650e831,
+        type: 3}
+      propertyPath: m_UseGravity
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114768861205254543, guid: 0235d859c1627604aa6b84b97650e831,

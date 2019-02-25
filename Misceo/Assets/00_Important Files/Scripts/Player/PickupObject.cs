@@ -32,8 +32,9 @@ public class PickupObject : MonoBehaviour
         if (carrying)
         {
             carry(carriedObject);
-            checkDrop();
             checkInteractable();
+            checkDrop();
+            
         }
         else
         {
@@ -106,6 +107,18 @@ public class PickupObject : MonoBehaviour
                 //debug=hit2.collider.;
                 //Debug.Log(debug);
                 //InteractClass.; 
+                if (i.gameObject.CompareTag("glassware"))
+                {
+                    InteractClass.interactGlassware(carriedObject,interactedObject);
+                }
+                else if (i.gameObject.CompareTag("labequipment"))
+                {
+                    InteractClass.interactLabEquipment();
+                }
+                else if (i.gameObject.CompareTag("computer"))
+                {
+                    InteractClass.interactComputer();
+                }
             }
         }
     }
