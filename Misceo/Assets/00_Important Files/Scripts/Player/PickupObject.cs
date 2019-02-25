@@ -110,6 +110,7 @@ public class PickupObject : MonoBehaviour
                 if (i.gameObject.CompareTag("glassware"))
                 {
                     InteractClass.interactGlassware(carriedObject,interactedObject);
+
                 }
                 else if (i.gameObject.CompareTag("labequipment"))
                 {

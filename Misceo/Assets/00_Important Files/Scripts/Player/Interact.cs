@@ -7,7 +7,7 @@ public class Interact
     public void interactGlassware(GameObject carriedObject, GameObject interactedObject)
     {
         Debug.Log("You interacted with a Glassware");
-
+        
     }
     public void interactLabEquipment()
     {
