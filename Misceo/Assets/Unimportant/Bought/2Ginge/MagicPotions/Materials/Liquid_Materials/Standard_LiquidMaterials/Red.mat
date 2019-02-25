@@ -5,7 +5,8 @@ Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: Red
   m_Shader: {fileID: 4800000, guid: d7d2baa32548aac4da5dadeb07c51813, type: 3}
   m_ShaderKeywords: _EMISSION
@@ -83,10 +84,10 @@ Material:
     - _VolumeFade: 0.5
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 1, g: 0, b: 0, a: 1}
-    - _EmissionColor: {r: 1, g: 0, b: 0, a: 1}
-    - _SColor: {r: 1, g: 0.36764705, b: 0.36764705, a: 1}
-    - _SEmissionColor: {r: 1, g: 0.27205884, b: 0.27205884, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor: {r: 1, g: 1, b: 1, a: 0}
+    - _SColor: {r: 1, g: 1, b: 1, a: 1}
+    - _SEmissionColor: {r: 1, g: 1, b: 1, a: 1}
     - _SurfaceTexAnim: {r: 1, g: 1, b: 0, a: 0}
     - _SurfaceTint: {r: 1, g: 1, b: 1, a: 0.5}
     - _UpVector: {r: 0, g: 1, b: 0, a: 0}
