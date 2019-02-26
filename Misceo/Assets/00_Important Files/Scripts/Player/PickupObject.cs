@@ -8,6 +8,7 @@ public class PickupObject : MonoBehaviour
     GameObject carriedObject;
     GameObject interactedObject;
 
+
     private Interact InteractClass;
 
     bool carrying;
