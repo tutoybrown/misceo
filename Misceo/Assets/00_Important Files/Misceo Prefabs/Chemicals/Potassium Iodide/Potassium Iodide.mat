@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Potassium
+  m_Name: Potassium Iodide
   m_Shader: {fileID: 4800000, guid: d7d2baa32548aac4da5dadeb07c51813, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -59,7 +59,7 @@ Material:
     - _BumpScale: 1
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
-    - _Distortion: 0
+    - _Distortion: 0.25
     - _DstBlend: 0
     - _EmissionScalar: 1
     - _GlossMapScale: 1
@@ -72,9 +72,9 @@ Material:
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
-    - _SurfaceFade: 0.629
+    - _SurfaceFade: 0.858
     - _UVSec: 0
-    - _VolumeFade: 0.753
+    - _VolumeFade: 0.846
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
