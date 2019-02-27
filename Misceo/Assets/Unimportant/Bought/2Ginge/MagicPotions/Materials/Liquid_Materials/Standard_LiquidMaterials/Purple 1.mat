@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Purple
+  m_Name: Purple 1
   m_Shader: {fileID: 4800000, guid: c02ebcc8539a2a64795da12a1f5148c4, type: 3}
   m_ShaderKeywords: _EMISSION
   m_LightmapFlags: 1
