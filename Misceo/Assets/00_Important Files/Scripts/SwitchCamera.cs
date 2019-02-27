@@ -7,6 +7,7 @@ public class SwitchCamera : MonoBehaviour
     public Camera Main, UI;
     public GameObject next, crosshair;
 
+    
     void Start()
     {
         Main.enabled = true;

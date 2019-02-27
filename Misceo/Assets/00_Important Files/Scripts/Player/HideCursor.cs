@@ -15,4 +15,10 @@ public class HideCursor : MonoBehaviour
     {
         //Cursor.lockState = CursorLockMode.Confined;
     }
+
+    public void Cursors()
+    {
+        // Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+    }
 }

@@ -5,8 +5,8 @@ using UnityEngine;
 public class PickupObject : MonoBehaviour
 {
     GameObject mainCamera;
-    GameObject carriedObject;
-    GameObject interactedObject;
+    public static GameObject carriedObject;
+    public static GameObject interactedObject;
 
 
     private Interact InteractClass;
