@@ -16,33 +16,35 @@ public class ObjectMoveCarried : MonoBehaviour
         rb.useGravity = false;
     }
 
-    void FixedUpdate()
+    void Update()
     {
 
-        if (Input.GetKeyDown("a"))
+        if (Input.GetKey("a"))
         {
             transform.Translate(0, 0, speed * Time.deltaTime);
         }
-        if (Input.GetKeyDown("d"))
+        if (Input.GetKey("d"))
         {
             transform.Translate(0, 0, -speed * Time.deltaTime);
         }
-        if (Input.GetKeyDown("w"))
+        if (Input.GetKey("w"))
         {
             transform.Translate(0, speed * Time.deltaTime, 0);
         }
-        if (Input.GetKeyDown("s"))
+        if (Input.GetKey("s"))
         {
             transform.Translate(0, -speed * Time.deltaTime, 0);
         }
-
-        if (Input.GetKeyDown("q"))
+        //ROTATE (put Mathf.Clamp)
+        if (Input.GetKey("q"))
         {
             transform.Rotate(angle * Time.deltaTime, 0.0f, 0.0f);
+            //rotationX = Mathf.Clamp(rotationX, -maxCameraRotation, maxCameraRotation);
         }
-        if (Input.GetKeyDown("e"))
+        if (Input.GetKey("e"))
         {
             transform.Rotate(-angle * Time.deltaTime, 0.0f, 0.0f);
+
         }
 
 

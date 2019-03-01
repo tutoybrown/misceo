@@ -18,28 +18,28 @@ public class ObjectMove : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (Input.GetKeyDown("j"))
+        if (Input.GetKey("j"))
         {
             transform.Translate(0, 0, speed * Time.deltaTime, Space.World);
         }
-        if (Input.GetKeyDown("l"))
+        if (Input.GetKey("l"))
         {
             transform.Translate(0, 0, -speed * Time.deltaTime, Space.World);
         }
-        if (Input.GetKeyDown("i"))
+        if (Input.GetKey("i"))
         {
             transform.Translate(0, speed * Time.deltaTime, 0, Space.World);
         }
-        if (Input.GetKeyDown("k"))
+        if (Input.GetKey("k"))
         {
             transform.Translate(0, -speed * Time.deltaTime, 0, Space.World);
         }
-
-        if (Input.GetKeyDown("u"))
+        //Rotate put Matf.clamp
+        if (Input.GetKey("u"))
         {
             transform.Rotate(angle * Time.deltaTime, 0.0f, 0.0f);
         }
-        if (Input.GetKeyDown("o"))
+        if (Input.GetKey("o"))
         {
             transform.Rotate(angle * Time.deltaTime, 0.0f, 0.0f);
         }
