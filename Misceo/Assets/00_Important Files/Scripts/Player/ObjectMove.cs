@@ -41,7 +41,7 @@ public class ObjectMove : MonoBehaviour
         }
         if (Input.GetKey("o"))
         {
-            transform.Rotate(angle * Time.deltaTime, 0.0f, 0.0f);
+            transform.Rotate(-angle * Time.deltaTime, 0.0f, 0.0f);
         }
     }
 }
