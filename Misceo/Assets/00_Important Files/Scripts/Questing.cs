@@ -4,12 +4,8 @@ using UnityEngine;
 
 public class Questing : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
+    public static bool Movement, PressE, ClickDis , OpenDoor, ActPour= false;
+    
     // Update is called once per frame
     void Update()
     {
