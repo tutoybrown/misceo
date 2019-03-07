@@ -44,8 +44,16 @@ public class ObjectMoveCarried : MonoBehaviour
         //rotationX = Mathf.Clamp(rotationX, -maxRotation, maxRotation);
         if (Input.GetKey("q"))
         {
-            transform.Rotate(angle * Time.deltaTime, 0.0f, 0.0f);
+            /*if (transform.localEulerAngles.x<30.0f|| transform.localEulerAngles.x > 150.0f)
+            {*/
+                transform.Rotate(angle * Time.deltaTime, 0.0f, 0.0f);
+            /*}
+            else
+            {
+                transform.localEulerAngles.x
+            }*/
             //transform.eulerAngles=rotlimit;
+
         }
         if (Input.GetKey("e"))
         {
