@@ -37,6 +37,90 @@ public class Interact
             InteractSub.main.enabled = false;
             InteractSub.player.SetActive(false);
         }
+
+        if (InteractSub.playerlocation == 2)
+        {
+            carriedObject.transform.SetParent(InteractSub.worktable2a);
+            interactedObject.transform.SetParent(InteractSub.worktable2b);
+
+            carriedObject.transform.localPosition = new Vector3(0, 0, 0);
+            interactedObject.transform.localPosition = new Vector3(0, 0, 0);
+            //move the things
+            carriedObject.AddComponent<ObjectMoveCarried>().enabled = true;
+            interactedObject.AddComponent<ObjectMove>().enabled = true;
+
+            InteractSub.pouring = 2;
+
+            InteractSub.worktable1a.DetachChildren();
+            InteractSub.worktable1b.DetachChildren();
+
+            InteractSub.worktable2.enabled = true;
+            InteractSub.main.enabled = false;
+            InteractSub.player.SetActive(false);
+        }
+
+        if (InteractSub.playerlocation == 3)
+        {
+            carriedObject.transform.SetParent(InteractSub.worktable3a);
+            interactedObject.transform.SetParent(InteractSub.worktable3b);
+
+            carriedObject.transform.localPosition = new Vector3(0, 0, 0);
+            interactedObject.transform.localPosition = new Vector3(0, 0, 0);
+            //move the things
+            carriedObject.AddComponent<ObjectMoveCarried>().enabled = true;
+            interactedObject.AddComponent<ObjectMove>().enabled = true;
+
+            InteractSub.pouring = 3;
+
+            InteractSub.worktable1a.DetachChildren();
+            InteractSub.worktable1b.DetachChildren();
+
+            InteractSub.worktable3.enabled = true;
+            InteractSub.main.enabled = false;
+            InteractSub.player.SetActive(false);
+        }
+
+        if (InteractSub.playerlocation == 4)
+        {
+            carriedObject.transform.SetParent(InteractSub.worktable4a);
+            interactedObject.transform.SetParent(InteractSub.worktable4b);
+
+            carriedObject.transform.localPosition = new Vector3(0, 0, 0);
+            interactedObject.transform.localPosition = new Vector3(0, 0, 0);
+            //move the things
+            carriedObject.AddComponent<ObjectMoveCarried>().enabled = true;
+            interactedObject.AddComponent<ObjectMove>().enabled = true;
+
+            InteractSub.pouring = 4;
+
+            InteractSub.worktable4a.DetachChildren();
+            InteractSub.worktable4b.DetachChildren();
+
+            InteractSub.worktable1.enabled = true;
+            InteractSub.main.enabled = false;
+            InteractSub.player.SetActive(false);
+        }
+
+        if (InteractSub.playerlocation == 5)
+        {
+            carriedObject.transform.SetParent(InteractSub.worktable5a);
+            interactedObject.transform.SetParent(InteractSub.worktable5b);
+
+            carriedObject.transform.localPosition = new Vector3(0, 0, 0);
+            interactedObject.transform.localPosition = new Vector3(0, 0, 0);
+            //move the things
+            carriedObject.AddComponent<ObjectMoveCarried>().enabled = true;
+            interactedObject.AddComponent<ObjectMove>().enabled = true;
+
+            InteractSub.pouring = 5;
+
+            InteractSub.worktable1a.DetachChildren();
+            InteractSub.worktable1b.DetachChildren();
+
+            InteractSub.worktable5.enabled = true;
+            InteractSub.main.enabled = false;
+            InteractSub.player.SetActive(false);
+        }
         //Debug.Log("You interacted with a Glassware");
     }
 
@@ -65,7 +149,7 @@ public class Interact
 
 
         }
-        Debug.Log("You interacted with a Lab Equipment");
+        //Debug.Log("You interacted with a Lab Equipment");
     }
     public void interactComputer()
     {
