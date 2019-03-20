@@ -7,11 +7,11 @@ public class InteractSub : MonoBehaviour
 {
     public static int playerlocation;
 
-    public static Transform worktable1a, worktable1b, worktable2a, worktable2b, worktable3a, worktable3b, worktable4a, worktable4b, worktable5a, worktable5b;
+    public static Transform worktable1a, worktable1b, worktable2a, worktable2b, worktable3a, worktable3b, worktable4a, worktable4b, worktable5a, worktable5b, hotplates;
 
-    public static Camera main, worktable1, worktable2, worktable3, worktable4, worktable5;
+    public static Camera main, worktable1, worktable2, worktable3, worktable4, worktable5, hotplate;
 
-    public Transform worktale1a, worktale1b, worktale2a, worktale2b, worktale3a, worktale3b, worktale4a, worktale4b, worktale5a, worktale5b;
+    public Transform worktale1a, worktale1b, worktale2a, worktale2b, worktale3a, worktale3b, worktale4a, worktale4b, worktale5a, worktale5b, hotplatess;
 
     public static GameObject player;
 
@@ -23,7 +23,7 @@ public class InteractSub : MonoBehaviour
     // 
     //
 
-    public Camera mains, worktable1s;
+    public Camera mains, worktable1s, hotplat;
 
     public Rigidbody body, body2;
         
@@ -41,6 +41,8 @@ public class InteractSub : MonoBehaviour
         worktable4b = worktale4b;
         worktable5a = worktale5a;
         worktable5b = worktale5b;
+        hotplate = hotplat;
+        hotplates = hotplatess;
         main = mains;
         worktable1 = worktable1s;
         player = players;

@@ -17,6 +17,7 @@ public class Interact
 
     public void interactGlassware(GameObject carriedObject, GameObject interactedObject)
     {
+        Debug.Log("lol");
         if (InteractSub.playerlocation == 1)
         {
             carriedObject.transform.SetParent(InteractSub.worktable1a);
@@ -38,27 +39,7 @@ public class Interact
             InteractSub.player.SetActive(false);
         }
 
-        if (InteractSub.playerlocation == 2)
-        {
-            carriedObject.transform.SetParent(InteractSub.worktable2a);
-            interactedObject.transform.SetParent(InteractSub.worktable2b);
-
-            carriedObject.transform.localPosition = new Vector3(0, 0, 0);
-            interactedObject.transform.localPosition = new Vector3(0, 0, 0);
-            //move the things
-            carriedObject.AddComponent<ObjectMoveCarried>().enabled = true;
-            interactedObject.AddComponent<ObjectMove>().enabled = true;
-
-            InteractSub.pouring = 2;
-
-            InteractSub.worktable1a.DetachChildren();
-            InteractSub.worktable1b.DetachChildren();
-
-            InteractSub.worktable2.enabled = true;
-            InteractSub.main.enabled = false;
-            InteractSub.player.SetActive(false);
-        }
-
+        /*
         if (InteractSub.playerlocation == 3)
         {
             carriedObject.transform.SetParent(InteractSub.worktable3a);
@@ -70,7 +51,7 @@ public class Interact
             carriedObject.AddComponent<ObjectMoveCarried>().enabled = true;
             interactedObject.AddComponent<ObjectMove>().enabled = true;
 
-            InteractSub.pouring = 3;
+            InteractSub.pouring = 1;
 
             InteractSub.worktable1a.DetachChildren();
             InteractSub.worktable1b.DetachChildren();
@@ -91,7 +72,7 @@ public class Interact
             carriedObject.AddComponent<ObjectMoveCarried>().enabled = true;
             interactedObject.AddComponent<ObjectMove>().enabled = true;
 
-            InteractSub.pouring = 4;
+            InteractSub.pouring = 1;
 
             InteractSub.worktable4a.DetachChildren();
             InteractSub.worktable4b.DetachChildren();
@@ -112,7 +93,7 @@ public class Interact
             carriedObject.AddComponent<ObjectMoveCarried>().enabled = true;
             interactedObject.AddComponent<ObjectMove>().enabled = true;
 
-            InteractSub.pouring = 5;
+            InteractSub.pouring = 1;
 
             InteractSub.worktable1a.DetachChildren();
             InteractSub.worktable1b.DetachChildren();
@@ -121,6 +102,7 @@ public class Interact
             InteractSub.main.enabled = false;
             InteractSub.player.SetActive(false);
         }
+        */
         //Debug.Log("You interacted with a Glassware");
     }
 
@@ -131,30 +113,26 @@ public class Interact
         Hotplate i = interactedObject.GetComponent<Hotplate>();
         if (i != null)
         {
-            carriedObject.transform.SetParent(InteractSub.worktable1a);
+            carriedObject.transform.SetParent(InteractSub.hotplates);
 
             carriedObject.transform.localPosition = new Vector3(0, 0, 0);
             
-            
 
-            InteractSub.pouring = 1;
-
-            InteractSub.worktable1a.DetachChildren();
-            InteractSub.worktable1b.DetachChildren();
-
-            InteractSub.worktable1.enabled = true;
+            InteractSub.hotplates.DetachChildren();
+            InteractSub.hotplate.enabled = true;
             InteractSub.main.enabled = false;
             InteractSub.player.SetActive(false);
 
-
+                
 
         }
-        //Debug.Log("You interacted with a Lab Equipment");
+        Debug.Log("You interacted with a Lab Equipment");
     }
+    /*
     public void interactComputer()
     {
         Debug.Log("You interacted with a Computer");
     }
-
+    */
 }
  

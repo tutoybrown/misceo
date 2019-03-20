@@ -117,10 +117,12 @@ public class PickupObject : MonoBehaviour
                 {
                     InteractClass.interactLabEquipment(carriedObject, interactedObject);
                 }
+                /*
                 else if (i.gameObject.CompareTag("computer"))
                 {
                     InteractClass.interactComputer();
                 }
+                */
             }
         }
     }
