@@ -11,7 +11,7 @@ public class InteractSub : MonoBehaviour
 
     public static Camera main, worktable1, worktable2, worktable3, worktable4, worktable5;
 
-    public Transform worktale1a, worktale1b, worktale2a, worktale2b, worktale3a, worktale3b, worktale4a, worktale4b, worktale5a, worktale5b;
+    public Transform worktale1a, worktale1b;
 
     public static GameObject player;
 
@@ -20,8 +20,8 @@ public class InteractSub : MonoBehaviour
     public GameObject players;
 
 
-    // 
-    //
+    // worktale2a, worktale2b, worktale3a, worktale3b
+    //, worktable4a, worktable4b, worktable5a, worktable5b
 
     public Camera mains, worktable1s;
 
@@ -33,14 +33,6 @@ public class InteractSub : MonoBehaviour
     {
         worktable1a = worktale1a;
         worktable1b = worktale1b;
-        worktable2a = worktale2a;
-        worktable2b = worktale2b;
-        worktable3a = worktale3a;
-        worktable3b = worktale3b;
-        worktable4a = worktale4a;
-        worktable4b = worktale4b;
-        worktable5a = worktale5a;
-        worktable5b = worktale5b;
         main = mains;
         worktable1 = worktable1s;
         player = players;
