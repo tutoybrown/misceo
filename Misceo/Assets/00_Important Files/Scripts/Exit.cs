@@ -1,17 +1,27 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class Playerishere : MonoBehaviour
+public class Exit : MonoBehaviour
 {
-    public int playerlocationnumber;
-    public bool inside = false;
+    public int scene;
+    public bool inside;
+
+
+
+    void OnTriggerStay(Collider other)
+    {
+        if (Input.GetKeyDown("e") && other.tag == "MainCamera")
+        {
+            SceneManager.LoadScene(scene);
+        }
+    }
 
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("MainCamera"))
         {
-            InteractSub.playerlocation = playerlocationnumber;
             inside = true;
         }
 
@@ -20,16 +30,17 @@ public class Playerishere : MonoBehaviour
     {
         if (inside)
         {
-            GUI.Label(new Rect(Screen.width / 2 + 25, Screen.height - 50, 175, 45), "You are now in Workstation: " + playerlocationnumber);
+            GUI.Label(new Rect(Screen.width / 2 + 25, Screen.height - 50, 175, 45), "Press E to exit");
         }
     }
     void OnTriggerExit(Collider other)
     {
         if (other.CompareTag("MainCamera"))
         {
-            InteractSub.playerlocation = 0;
             inside = false;
         }
 
     }
+
+    
 }

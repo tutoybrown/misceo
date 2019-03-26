@@ -34,6 +34,7 @@ public class OpenableDoor : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.F) && enter)
         {
             open = !open;
+            Questing.OpenDoor = true;
         }
     }
 

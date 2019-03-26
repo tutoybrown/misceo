@@ -12,7 +12,8 @@ public class Interact
     {
         InteractSub.main.enabled = true;
         InteractSub.worktable1.enabled = false;
-        
+        InteractSub.hotplatecams.enabled = false;
+
     }
 
     public void interactGlassware(GameObject carriedObject, GameObject interactedObject)
@@ -47,25 +48,23 @@ public class Interact
         Hotplate i = interactedObject.GetComponent<Hotplate>();
         if (i != null)
         {
-            carriedObject.transform.SetParent(InteractSub.worktable1a);
-
+            carriedObject.transform.SetParent(InteractSub.hotplate);
+            
             carriedObject.transform.localPosition = new Vector3(0, 0, 0);
-            
-            
 
-            InteractSub.pouring = 1;
+            carriedObject.AddComponent<Equipment>().enabled = true;
 
-            InteractSub.worktable1a.DetachChildren();
-            InteractSub.worktable1b.DetachChildren();
+            InteractSub.equipment = 1;
 
-            InteractSub.worktable1.enabled = true;
+            //InteractSub.hotplate.DetachChildren();
+
+            InteractSub.hotplatecams.enabled = true;
             InteractSub.main.enabled = false;
             InteractSub.player.SetActive(false);
 
-
-
+           
         }
-        Debug.Log("You interacted with a Lab Equipment");
+        //Debug.Log("You interacted with a Lab Equipment");
     }
     public void interactComputer()
     {

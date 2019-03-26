@@ -95,6 +95,7 @@ public class PickupObject : MonoBehaviour
         }
     }
 
+
     void interact()
     {
         Ray rayinteract = mainCamera.GetComponent<Camera>().ScreenPointToRay(new Vector3(x, y));
@@ -110,11 +111,13 @@ public class PickupObject : MonoBehaviour
                 //InteractClass.; 
                 if (i.gameObject.CompareTag("glassware"))
                 {
+                    Questing.ActPour = true;
                     InteractClass.interactGlassware(carriedObject,interactedObject);
 
                 }
                 else if (i.gameObject.CompareTag("labequipment"))
                 {
+                    Questing.Hotplate = true;
                     InteractClass.interactLabEquipment(carriedObject, interactedObject);
                 }
                 else if (i.gameObject.CompareTag("computer"))
