@@ -26,8 +26,8 @@ MonoBehaviour:
   m_simpleClothDrag: 0
   m_simpleClothLift: 0
   m_simpleFluidCohesion: 0.02
-  m_simpleFluidTension: 0.09
-  m_simpleFluidViscosity: 1.14
+  m_simpleFluidTension: 0
+  m_simpleFluidViscosity: 0
   m_simpleFluidVorticity: 0
   m_simpleFluidAnisotropy: 2
   m_simpleFluidMinScale: 0.2
@@ -45,7 +45,7 @@ MonoBehaviour:
   m_fluidRest: 0.171
   m_staticFriction: 4.7
   m_dynamicFriction: 4.7
-  m_particleFriction: 0.1
+  m_particleFriction: 0
   m_restitution: 0
   m_adhesion: 0
   m_sleepThreshold: 0
@@ -59,8 +59,8 @@ MonoBehaviour:
   m_lift: 0
   m_fluid: 1
   m_cohesion: 0.02
-  m_surfaceTension: 0.09
-  m_viscosity: 1.14
+  m_surfaceTension: 0
+  m_viscosity: 0
   m_vorticityConfinement: 0
   m_anisotropyScale: 2
   m_anisotropyMin: 0.2
@@ -82,5 +82,5 @@ MonoBehaviour:
   m_planes: []
   m_relaxationMode: 1
   m_relaxationFactor: 1
-  m_fluidMaterial: {fileID: 2100000, guid: 9872ba020c961ba428f494e2a2ce4b93, type: 2}
+  m_fluidMaterial: {fileID: 2100000, guid: b0217ea4b82f674429f03dabd591d541, type: 2}
   m_showTimers: 0

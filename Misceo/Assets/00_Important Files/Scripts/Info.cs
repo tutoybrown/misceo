@@ -18,7 +18,7 @@ public class Info : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyUp("i") && on == 0)
+        if (Input.GetKeyUp("y") && on == 0)
         {
             ui.enabled = !main.enabled;
             main.enabled = !ui.enabled;
