@@ -33,7 +33,7 @@ public class Info : MonoBehaviour
             on = 1;
         }
 
-        if (Input.GetKeyDown("i") && on == 1)
+        if (Input.GetKeyDown("y") && on == 1)
         {
 
             Menu.SetActive(true);

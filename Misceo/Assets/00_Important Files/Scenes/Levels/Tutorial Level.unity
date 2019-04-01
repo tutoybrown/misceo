@@ -7152,6 +7152,56 @@ PrefabInstance:
       propertyPath: m_ReferenceResolution.y
       value: 1080
       objectReference: {fileID: 0}
+    - target: {fileID: 114359248040610736, guid: 0aab1fa81d97f8047a8c2c1c5a4c722c,
+        type: 3}
+      propertyPath: m_MatchWidthOrHeight
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224191853405785378, guid: 0aab1fa81d97f8047a8c2c1c5a4c722c,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224191853405785378, guid: 0aab1fa81d97f8047a8c2c1c5a4c722c,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224191853405785378, guid: 0aab1fa81d97f8047a8c2c1c5a4c722c,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 224191853405785378, guid: 0aab1fa81d97f8047a8c2c1c5a4c722c,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224191853405785378, guid: 0aab1fa81d97f8047a8c2c1c5a4c722c,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701869431479378, guid: 0aab1fa81d97f8047a8c2c1c5a4c722c,
+        type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701869431479378, guid: 0aab1fa81d97f8047a8c2c1c5a4c722c,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701869431479378, guid: 0aab1fa81d97f8047a8c2c1c5a4c722c,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.11329814
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701869431479378, guid: 0aab1fa81d97f8047a8c2c1c5a4c722c,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0aab1fa81d97f8047a8c2c1c5a4c722c, type: 3}
 --- !u!224 &981786306 stripped
@@ -10832,7 +10882,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4451102131568298, guid: 0bc89041a10210748a35849ffb2c9b6a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.949
+      value: 1.485
       objectReference: {fileID: 0}
     - target: {fileID: 4451102131568298, guid: 0bc89041a10210748a35849ffb2c9b6a, type: 3}
       propertyPath: m_LocalPosition.z

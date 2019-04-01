@@ -53,7 +53,7 @@ public class ObjectMove : MonoBehaviour
         clampedPosition.z = Mathf.Clamp(transform.position.z,-9.5f, 16.5f);
         transform.position = clampedPosition;
         //clamped rotation
-        //clampedRotation.x = Mathf.Clamp(transform.eulerAngles.x, -maxrotation, maxrotation);
+        clampedRotation.x = Mathf.Clamp(transform.eulerAngles.x, -maxrotation, maxrotation);
         //put clamped into transform
         transform.position = clampedPosition;
         transform.eulerAngles = clampedRotation;
