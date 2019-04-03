@@ -17,11 +17,11 @@ public class ObjectMoveCarried : MonoBehaviour
         rb.useGravity = false;
     }
 
-    void Update()
+    void FixedUpdate()
     {
         //clamp
         Vector3 clampedPosition = transform.position;
-        Vector3 clampedRotation = transform.eulerAngles;
+       //Vector3 clampedRotation = transform.eulerAngles;
         //input
         if (Input.GetKey("a"))
         {
@@ -55,6 +55,6 @@ public class ObjectMoveCarried : MonoBehaviour
         //clampedRotation.x = Mathf.Clamp(transform.eulerAngles.x, -maxrotation, maxrotation);
         //put clamped into transform
         transform.position = clampedPosition;
-        transform.eulerAngles = clampedRotation;
+        //transform.eulerAngles = clampedRotation;
     }
 }
