@@ -10,6 +10,7 @@ TagManager:
   - glassware
   - labequipment
   - computer
+  - Potion
   layers:
   - Default
   - TransparentFX
@@ -20,9 +21,9 @@ TagManager:
   - 
   - 
   - PostProcessing
-  - Liquid
-  - 
-  - 
+  - liquid
+  - absorber
+  - container
   - 
   - 
   - 

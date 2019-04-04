@@ -899,7 +899,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6087b1290782e9f4a957e941f2fc3d7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 3581902980351476851, guid: 2f876703d018d2e4582c2dccaed130cb, type: 3}
+  prefab: {fileID: 1218087257478479066, guid: 116cf50786406e74e9482f6c0bc0f96d, type: 3}
   vector: {x: -77.29137, y: 5.4, z: 13.7}
 --- !u!114 &217374173
 MonoBehaviour:
@@ -14160,7 +14160,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6087b1290782e9f4a957e941f2fc3d7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 4032275419367152683, guid: 915b0308a606d8140b34310278440825, type: 3}
+  prefab: {fileID: 6748797216579076553, guid: adef44b2e3b1c2d4894e01d00ffa2647, type: 3}
   vector: {x: -77.29137, y: 5.30519, z: 17.56722}
 --- !u!4 &1987383098
 Transform:
