@@ -112,12 +112,14 @@ public class PickupObject : MonoBehaviour
                 if (i.gameObject.CompareTag("glassware"))
                 {
                     Questing.ActPour = true;
+                    Debug.Log("ActPour");
                     InteractClass.interactGlassware(carriedObject,interactedObject);
 
                 }
                 else if (i.gameObject.CompareTag("labequipment"))
                 {
-                    Questing.Hotplate = true;
+                    Questing.Hotplte = true;
+                    Debug.Log("Hotplate");
                     InteractClass.interactLabEquipment(carriedObject, interactedObject);
                 }
                 else if (i.gameObject.CompareTag("computer"))

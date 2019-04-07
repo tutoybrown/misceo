@@ -36,7 +36,7 @@ public class MovementQ : MonoBehaviour
 
         if (w && s && d && a)
         {
-            Questing.Movement = true;
+            //Questing.Movement = true;
         }
     }
 }

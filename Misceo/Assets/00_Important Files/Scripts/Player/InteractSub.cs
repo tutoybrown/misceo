@@ -91,7 +91,7 @@ public class InteractSub : MonoBehaviour
                 
                 body.isKinematic = false;
                 body.useGravity = true;
-                
+
 
                 Destroy(equip);
                 InteractSub.player.SetActive(true);

@@ -26,6 +26,7 @@ public class SwitchCamera : MonoBehaviour
             Cursor.visible = true;
 
             Questing.PressE = true;
+            Debug.Log("PressE");
         }
     }
 

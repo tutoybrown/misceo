@@ -35,6 +35,7 @@ public class OpenableDoor : MonoBehaviour
         {
             open = !open;
             Questing.OpenDoor = true;
+            Debug.Log("OpenDoor");
         }
     }
 
