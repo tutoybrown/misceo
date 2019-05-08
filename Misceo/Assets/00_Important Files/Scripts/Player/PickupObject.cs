@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PickupObject : MonoBehaviour
 {
-    
     GameObject mainCamera;
     public static GameObject carriedObject;
     public static GameObject interactedObject;
@@ -112,15 +111,15 @@ public class PickupObject : MonoBehaviour
                 //InteractClass.; 
                 if (i.gameObject.CompareTag("glassware"))
                 {
-                    
-                    
+                    Questing.ActPour = true;
+                    Debug.Log("ActPour");
                     InteractClass.interactGlassware(carriedObject,interactedObject);
 
                 }
                 else if (i.gameObject.CompareTag("labequipment"))
                 {
-                    
-                    
+                    Questing.Hotplte = true;
+                    Debug.Log("Hotplate");
                     InteractClass.interactLabEquipment(carriedObject, interactedObject);
                 }
                 else if (i.gameObject.CompareTag("computer"))

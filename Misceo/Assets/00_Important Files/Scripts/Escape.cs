@@ -11,7 +11,7 @@ public class Escape : MonoBehaviour
     }
 
     // Update is called once per frame
-    void GetOut()
+    void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
