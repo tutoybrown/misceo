@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class Exit : MonoBehaviour
 {
     public int scene;
-    public GameObject hud;
+    public bool inside;
 
 
 
@@ -22,16 +22,22 @@ public class Exit : MonoBehaviour
     {
         if (other.CompareTag("MainCamera"))
         {
-            hud.SetActive(true);
+            inside = true;
         }
 
     }
-    
+    void OnGUI()
+    {
+        if (inside)
+        {
+            GUI.Label(new Rect(Screen.width / 2 + 25, Screen.height - 50, 175, 45), "Press E to exit");
+        }
+    }
     void OnTriggerExit(Collider other)
     {
         if (other.CompareTag("MainCamera"))
         {
-            hud.SetActive(false);
+            inside = false;
         }
 
     }

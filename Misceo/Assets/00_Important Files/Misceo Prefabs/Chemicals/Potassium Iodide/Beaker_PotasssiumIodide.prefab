@@ -15,7 +15,6 @@ GameObject:
   - component: {fileID: 1914274854545035337}
   - component: {fileID: 1914274854545035336}
   - component: {fileID: 1914274854545035339}
-  - component: {fileID: 1275813889694220274}
   m_Layer: 0
   m_Name: Beaker_PotasssiumIodide
   m_TagString: glassware
@@ -148,20 +147,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 3
---- !u!64 &1275813889694220274
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1914274854545035338}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 1
-  m_CookingOptions: 14
-  m_Mesh: {fileID: 4300000, guid: 0bdab28efdba63a47949319a5f047c2d, type: 3}
 --- !u!1 &1914274854569882380
 GameObject:
   m_ObjectHideFlags: 0

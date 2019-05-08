@@ -5,8 +5,8 @@ using UnityEngine;
 public class SwitchCamera : MonoBehaviour
 {
     public Camera Main, UI;
-    public GameObject next, crosshair, hud;
-   
+    public GameObject next, crosshair;
+    public bool inside = false;
 
     void Start()
     {
@@ -24,6 +24,9 @@ public class SwitchCamera : MonoBehaviour
             UI.enabled = !Main.enabled;
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
+
+            Questing.PressE = true;
+            Debug.Log("PressE");
         }
     }
 
@@ -31,17 +34,23 @@ public class SwitchCamera : MonoBehaviour
     {
         if (other.CompareTag("MainCamera"))
         {
-            hud.SetActive(true);
+            inside = true;
         }
 
     }
-    
+    void OnGUI()
+    {
+        if (inside)
+        {
+            GUI.Label(new Rect(Screen.width / 2 + 25, Screen.height - 50, 175, 45), "Press E to use the Computer");
+        }
+    }
     void OnTriggerExit(Collider other)
     {
         if (other.CompareTag("MainCamera"))
         {
             InteractSub.playerlocation = 0;
-            hud.SetActive(false);
+            inside = false;
         }
 
     }

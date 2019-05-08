@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 114086211681946208}
   - component: {fileID: 114229806008704980}
   - component: {fileID: 114892699990083282}
+  - component: {fileID: 5677154498809784315}
   - component: {fileID: 143446351577338056}
   m_Layer: 0
   m_Name: PlayerCam
@@ -142,6 +143,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   distance: 10
   smooth: 10
+--- !u!114 &5677154498809784315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1064290672656496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d04c5b8e5be1884e804ce3f28c07e1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  worktale1a: {fileID: 0}
+  worktale1b: {fileID: 0}
+  hotplates: {fileID: 0}
+  players: {fileID: 0}
+  mains: {fileID: 0}
+  worktable1s: {fileID: 0}
+  hotplatecam: {fileID: 0}
+  body: {fileID: 0}
+  body2: {fileID: 0}
 --- !u!143 &143446351577338056
 CharacterController:
   m_ObjectHideFlags: 0
