@@ -9,10 +9,20 @@ public class LiquidAbsorption : MonoBehaviour {
     public BottleSmash smashScript;
     public float particleValue = 0.02f;
     public LiquidVolumeAnimator LVA;
+
+    
+    //level 1
+    /*
+    Renderer thisRend;
+    public float transitionTime = 5f;
+    */
+
+
 	// Use this for initialization
 	void Start () {
         if(LVA == null)
         LVA = GetComponent<LiquidVolumeAnimator>();
+
 	}
     void OnParticleCollision(GameObject other)
     {

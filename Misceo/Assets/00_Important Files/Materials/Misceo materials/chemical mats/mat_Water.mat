@@ -77,7 +77,7 @@ Material:
     - _VolumeFade: 1
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0.6839622, g: 0.94013554, b: 1, a: 1}
+    - _Color: {r: 0.15040937, g: 0.18159223, b: 0.18867922, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SColor: {r: 0.26779994, g: 0.9622642, b: 0.922719, a: 1}
     - _SEmissionColor: {r: 0, g: 0, b: 0, a: 1}

@@ -15,7 +15,7 @@ public class OpenableDoor : MonoBehaviour
     // Smothly open a door
     public float smooth = 2.0f; //Increasing this value will make the door open faster
     public float doorOpenAngle = -90.0f; //Set either positive or negative number to open the door inwards or outwards
-
+    public GameObject hud;
     bool open = false;
     bool enter = false;
 
@@ -31,21 +31,14 @@ public class OpenableDoor : MonoBehaviour
     {
         transform.localEulerAngles = new Vector3(transform.localEulerAngles.x, Mathf.LerpAngle(transform.localEulerAngles.y, (open ? doorOpenAngle : defaultRotationAngle), Time.deltaTime * smooth), transform.localEulerAngles.z);
 
-        if (Input.GetKeyDown(KeyCode.F) && enter)
+        if (Input.GetKeyDown(KeyCode.E) && enter)
         {
             open = !open;
-            Questing.OpenDoor = true;
-            Debug.Log("OpenDoor");
+            
         }
     }
 
-    void OnGUI()
-    {
-        if (enter)
-        {
-            GUI.Label(new Rect(Screen.width / 2 - 75, Screen.height - 100, 150, 30), "Press 'F' to open the door");
-        }
-    }
+    
 
     //Activate the Main function when player is near the door
     void OnTriggerEnter(Collider other)
@@ -53,6 +46,7 @@ public class OpenableDoor : MonoBehaviour
         if (other.CompareTag("MainCamera"))
         {
             enter = true;
+            hud.SetActive(true);
         }
     }
 
@@ -62,6 +56,7 @@ public class OpenableDoor : MonoBehaviour
         if (other.CompareTag("MainCamera"))
         {
             enter = false;
+            hud.SetActive(false);
         }
     }
 }
