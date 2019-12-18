@@ -6,6 +6,19 @@ public class DragObject : MonoBehaviour
 {
     private Vector3 mOffset;
     private float mZCoord;
+    float speed = 10.0f;
+
+    /*
+    void Update()
+    {
+        if (Input.GetAxis("Mouse ScrollWheel") != 0)
+        {
+            transform.position += new Vector3(Input.GetAxisRaw("Mouse X") * Time.deltaTime * speed,
+                                       0.0f, Input.GetAxisRaw("Mouse Y") * Time.deltaTime * speed);
+        }
+
+    }
+    */
 
     void OnMouseDown()
     {
