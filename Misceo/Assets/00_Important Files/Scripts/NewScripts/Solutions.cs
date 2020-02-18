@@ -9,8 +9,8 @@ public class Solutions : MonoBehaviour
     public static bool copB, silB, zinB;
     public static bool CUB, AGB, ZNB;
     public static bool on, A1, A2, B1, B2, left, right;
-    public static GameObject lelectron, relectron, pfoursix, nfoursix, ponefive, nonefive, poneone, noneone;
-    public GameObject lelectro, relectro, pfoursi, nfoursi, ponefiv, nonefiv, poneon, noneon;
+    public static GameObject lelectron, relectron, pfoursix, nfoursix, ponefive, nonefive, poneone, noneone, zero;
+    public GameObject lelectro, relectro, pfoursi, nfoursi, ponefiv, nonefiv, poneon, noneon, zer;
     // Start is called before the first frame update
     public void Start()
     {
@@ -22,143 +22,154 @@ public class Solutions : MonoBehaviour
         nonefive = nonefiv;
         poneone = poneon;
         noneone = noneon;
+        zero = zer;
     }
 
     // Metals A
     public void CopA()
     {
-        if (on == false)
-        {
             copA = true;
             silA = false;
             zinA = false;
 
             A1 = true;
-        }
+
+            Debug.Log("CopA");
     }
     public void SilA()
     {
-        if (on == false)
-        {
+       
             copA = false;
             silA = true;
             zinA = false;
 
             A1 = true;
-        }
+
+            Debug.Log("SilA");
+        
     }
     public void ZinA()
     {
-        if (on == false)
-        {
+        
             copA = false;
             silA = false;
             zinA = true;
 
             A1 = true;
-        }
+
+            Debug.Log("ZinA");
+        
     }
     //Metals B
     public void CopB()
     {
-        if (on == false)
-        {
+        
             copB = true;
             silB = false;
             zinB = false;
 
             B1 = true;
-        }
+
+            Debug.Log("CopB");
+        
     }
     public void SilB()
     {
-        if (on == false)
-        {
+        
             copB = false;
             silB = true;
             zinB = false;
 
             B1 = true;
-        }
+
+            Debug.Log("SilB");
+        
     }
     public void ZinB()
     {
-        if (on == false)
-        {
+        
             copB = false;
             silB = false;
             zinB = true;
 
             B1 = true;
-        }
+
+            Debug.Log("ZinB");
+        
     }
     // Solutions A
     public void CuA()
     {
-        if (on == false)
-        {
+        
             CUA = true;
             AGA = false;
             ZNA = false;
 
             A2 = true;
-        }
+
+            Debug.Log("CuA");
+        
     }
     public void AgA()
     {
-        if (on == false)
-        {
+        
             CUA = false;
             AGA = true;
             ZNA = false;
 
             A2 = true;
-        }
+
+            Debug.Log("AgA");
+        
     }
     public void ZiNA()
     {
-        if (on == false)
-        {
+        
             CUA = false;
             AGA = false;
             ZNA = true;
 
             A2 = true;
-        }
+
+            Debug.Log("ZiNA");
+        
     }
     // Solutions B
     public void CuB()
     {
-        if (on == false)
-        {
+        
             CUB = true;
             AGB = false;
             ZNB = false;
 
             B2 = true;
-        }
+
+            Debug.Log("CuB");
+        
     }
     public void AgB()
     {
-        if (on == false)
-        {
-            CUA = false;
-            AGA = true;
-            ZNA = false;
+        
+            CUB = false;
+            AGB = true;
+            ZNB = false;
 
             B2 = true;
-        }
+
+            Debug.Log("AgB");
+
     }
     public void ZiNB()
     {
-        if (on == false)
-        {
+        
             CUB = false;
             AGB = false;
             ZNB = true;
 
             B2 = true;
-        }
+
+            Debug.Log("ZiNB");
+
     }
 
     public void test()
@@ -169,8 +180,8 @@ public class Solutions : MonoBehaviour
             // Copper and Zinc
             if (CUA == true && copA == true && ZNB == true && zinB == true)
             {
-                Debug.Log("Hello");
                 poneone.SetActive(true);
+                Debug.Log("CZ");
                 on = true;
                 right = true;
             }
@@ -178,6 +189,7 @@ public class Solutions : MonoBehaviour
             if (ZNA == true && zinA == true && CUB == true && copB == true)
             {
                 noneone.SetActive(true);
+                Debug.Log("ZC");
                 on = true;
                 left = true;
             }
@@ -187,6 +199,7 @@ public class Solutions : MonoBehaviour
             if (CUA == true && copA == true && AGB == true && silB == true)
             {
                 nfoursix.SetActive(true);
+                Debug.Log("CS");
                 on = true;
                 left = true;
             }
@@ -194,6 +207,7 @@ public class Solutions : MonoBehaviour
             if (AGA == true && silA == true && CUB == true && copB == true)
             {
                 pfoursix.SetActive(true);
+                Debug.Log("SC");
                 on = true;
                 right = true;
             }
@@ -203,16 +217,24 @@ public class Solutions : MonoBehaviour
             if (ZNA == true && zinA == true && AGB == true && silB == true)
             {
                 nonefive.SetActive(true);
+                Debug.Log("ZS");
                 on = true;
                 left = true;
             }
 
             if (AGA == true && silA == true && ZNB == true && zinB == true)
             {
+                Debug.Log("SZ");
                 ponefive.SetActive(true);
                 on = true;
                 right = true;
             }
+
+            if(on == false)
+            {
+                zero.SetActive(true);
+            }
+            
         }
     }
 
@@ -242,7 +264,7 @@ public class Solutions : MonoBehaviour
         CUB = false;
         AGB = false;
         ZNB = false;
-        on = false;
+        //on = false;
         A1 = false;
         A2 = false;
         B1 = false;
